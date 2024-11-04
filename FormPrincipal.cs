@@ -20,11 +20,6 @@ namespace CriadorDeTemplate_Subope
             InitializeComponent();
         }
 
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void Melhoria_Click(object sender, EventArgs e)
         {
             this.Close();
@@ -222,11 +217,6 @@ namespace CriadorDeTemplate_Subope
         private void abrirJanelaSite(object obj)
         {
             Application.Run(new JanelaSite());
-        }
-
-        private void button3_Click(object sender, EventArgs e)
-        {
-
         }
 
         private void buttonAPI_Click(object sender, EventArgs e)
