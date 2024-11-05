@@ -308,6 +308,7 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="CriadorDeTemplate_Subope.exe" />
     <Content Include="LogoSuporte.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
