@@ -64,8 +64,9 @@ namespace CriadorDeTemplate_Subope
                  "URL: http://" + tl_Tenancy.Text + "." + comboPlano.Text + ".com.br" + "\r\n" +
                  "Login Type: " + comboPlano.Text + "\r\n" +
                  "Account: " + tl_Tenancy.Text + "\r\n" +
-                 "User: " + tl_user.Text + "\r\n" + "\r\n"+
-                 
+                 "User: " + tl_user.Text + "\r\n" + 
+                 "Senha: " +tl_Senha.Text+"\r\n"+ "\r\n" +
+
                  "(Optional) Note: " + "\r\n" + tl_Note.Text + "\r\n" + "\r\n"+
                  
                  "Consumer Key: "+tl_Key.Text + "\r\n"+
