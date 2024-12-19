@@ -65,7 +65,7 @@ namespace CriadorDeTemplate_Subope
                 "Cliente: "+tl_sip.Text+" - "+tl_sap.Text+" - "+tl_Nome.Text+"\r\n"+
                 "Número de Série: "+tl_numero.Text+"\r\n"+
                 "AppInstanciaDados: "+tl_app.Text+"\r\n"+
-                "SAP Customer Number - RTO: "+tl_sap.Text+" - SAP" + "\r\n" + "\r\n"+
+                "SAP Customer Number - RTO: "+tl_rto.Text+" - SAP" + "\r\n" + "\r\n"+
 
                 "URL: "+ tl_URL.Text + "\r\n" +
                 "User: " + tl_user.Text + "\r\n" + "\r\n" +
