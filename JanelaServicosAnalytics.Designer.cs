@@ -53,6 +53,8 @@
             this.Tenancy = new System.Windows.Forms.Label();
             this.tlEvid = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
+            this.tlCliente = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -111,11 +113,11 @@
             // tl_template
             // 
             this.tl_template.Cursor = System.Windows.Forms.Cursors.Cross;
-            this.tl_template.Location = new System.Drawing.Point(592, 179);
+            this.tl_template.Location = new System.Drawing.Point(592, 259);
             this.tl_template.Multiline = true;
             this.tl_template.Name = "tl_template";
             this.tl_template.ReadOnly = true;
-            this.tl_template.Size = new System.Drawing.Size(521, 690);
+            this.tl_template.Size = new System.Drawing.Size(521, 610);
             this.tl_template.TabIndex = 117;
             // 
             // comboTipo
@@ -160,7 +162,7 @@
             this.Senha.AutoSize = true;
             this.Senha.Location = new System.Drawing.Point(588, 96);
             this.Senha.Name = "Senha";
-            this.Senha.Size = new System.Drawing.Size(393, 30);
+            this.Senha.Size = new System.Drawing.Size(262, 20);
             this.Senha.TabIndex = 125;
             this.Senha.Text = "Login/nome do usuário que solicitou";
             // 
@@ -288,9 +290,26 @@
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(21, 819);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(356, 30);
+            this.label3.Size = new System.Drawing.Size(237, 20);
             this.label3.TabIndex = 143;
             this.label3.Text = "Evidência formalizada do pedido";
+            // 
+            // tlCliente
+            // 
+            this.tlCliente.Location = new System.Drawing.Point(593, 189);
+            this.tlCliente.Multiline = true;
+            this.tlCliente.Name = "tlCliente";
+            this.tlCliente.Size = new System.Drawing.Size(521, 26);
+            this.tlCliente.TabIndex = 146;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(589, 165);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(263, 30);
+            this.label5.TabIndex = 145;
+            this.label5.Text = "Nome / CNPJ do cliente";
             // 
             // JanelaServicosAnalytics
             // 
@@ -298,6 +317,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.ClientSize = new System.Drawing.Size(1155, 941);
+            this.Controls.Add(this.tlCliente);
+            this.Controls.Add(this.label5);
             this.Controls.Add(this.tlEvid);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.comboPlano);
@@ -357,5 +378,7 @@
         private System.Windows.Forms.Label Tenancy;
         private System.Windows.Forms.TextBox tlEvid;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.TextBox tlCliente;
+        private System.Windows.Forms.Label label5;
     }
 }

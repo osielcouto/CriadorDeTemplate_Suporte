@@ -34,6 +34,7 @@ namespace CriadorDeTemplate_Subope
 
         private void btLimpar_Click(object sender, EventArgs e)
         {
+            tlCliente.Clear();
             tlNote.Clear();
             tl_Desc.Clear();
             tl_Expected.Clear();
@@ -55,6 +56,7 @@ namespace CriadorDeTemplate_Subope
         {
             tl_template.Text = 
                 "Descrição/Assunto: " + tl_Desc.Text + "\r\n" +
+                "Nome/CNPJ do cliente: " + tlCliente.Text + "\r\n" +
                 "Login/Nome do usuário: " + tl_Login.Text + "\r\n" + "\r\n" +
 
                 "Steps:" + "\r\n" + tl_Steps.Text + "\r\n" + "\r\n"+

@@ -26,6 +26,7 @@ namespace CriadorDeTemplate_Subope
             {
                 tl_template.Text =
                 "Descrição/Assunto: " + comboTipo.Text + "\r\n" +
+                "Nome/CNPJ do cliente: " + tlCliente.Text + "\r\n" +
                 "Login/Nome do usuário que solicitou: " + tl_Login.Text + "\r\n" + "\r\n" +
 
                 "Steps:" + "\r\n" + tl_Steps.Text + "\r\n" + "\r\n" +
@@ -38,6 +39,7 @@ namespace CriadorDeTemplate_Subope
             {
                 tl_template.Text =
                 "Descrição/Assunto: " + comboTipo.Text + "\r\n" +
+                "Nome/CNPJ do cliente: " + tlCliente.Text + "\r\n" +
                 "URL: http://" + tl_Tenancy.Text + "." + comboPlano.Text + ".com.br" + "\r\n" +
                 "Login Type: " + comboPlano.Text + "\r\n" +
                 "Account: " + tl_Tenancy.Text + "\r\n" +
@@ -59,6 +61,7 @@ namespace CriadorDeTemplate_Subope
             {
                 tl_template.Text =
                 "Descrição/Assunto: " + comboTipo.Text + "\r\n" +
+                "Nome/CNPJ do cliente: " + tlCliente.Text + "\r\n" +
                 "Login/Nome do usuário que solicitou: " + tl_Login.Text + "\r\n" + "\r\n" +
 
                 "Formalização do pedido:" + tlEvid.Text + "\r\n" + "\r\n" +
@@ -71,6 +74,7 @@ namespace CriadorDeTemplate_Subope
             {
                 tl_template.Text =
                 "Descrição/Assunto: " + comboTipo.Text + "\r\n" +
+                "Nome/CNPJ do cliente: " + tlCliente.Text + "\r\n" +
                 "Login/Nome do usuário que solicitou: " + tl_Login.Text + "\r\n" + "\r\n" +
 
                 "Found Results:" + "\r\n" + tl_Found.Text + "\r\n" + "\r\n" +
@@ -80,6 +84,7 @@ namespace CriadorDeTemplate_Subope
         }
         private void btLimpar_Click(object sender, EventArgs e)
         {
+            tlCliente.Clear();
             tlEvid.Clear();
             tl_Expected.Clear();
             tl_Found.Clear();

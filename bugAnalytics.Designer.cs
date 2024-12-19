@@ -51,6 +51,8 @@
             this.label19 = new System.Windows.Forms.Label();
             this.tl_Found = new System.Windows.Forms.TextBox();
             this.label18 = new System.Windows.Forms.Label();
+            this.tlCliente = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // Titulo
@@ -108,11 +110,11 @@
             // tl_template
             // 
             this.tl_template.Cursor = System.Windows.Forms.Cursors.Cross;
-            this.tl_template.Location = new System.Drawing.Point(603, 200);
+            this.tl_template.Location = new System.Drawing.Point(603, 305);
             this.tl_template.Multiline = true;
             this.tl_template.Name = "tl_template";
             this.tl_template.ReadOnly = true;
-            this.tl_template.Size = new System.Drawing.Size(521, 647);
+            this.tl_template.Size = new System.Drawing.Size(521, 542);
             this.tl_template.TabIndex = 109;
             // 
             // label1
@@ -218,7 +220,7 @@
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(24, 549);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(464, 30);
+            this.label4.Size = new System.Drawing.Size(309, 20);
             this.label4.TabIndex = 125;
             this.label4.Text = "Link com relatório .xls e Dashboard em .zip";
             // 
@@ -256,11 +258,30 @@
             this.label18.TabIndex = 127;
             this.label18.Text = "Found result:";
             // 
+            // tlCliente
+            // 
+            this.tlCliente.Location = new System.Drawing.Point(603, 224);
+            this.tlCliente.Multiline = true;
+            this.tlCliente.Name = "tlCliente";
+            this.tlCliente.Size = new System.Drawing.Size(548, 26);
+            this.tlCliente.TabIndex = 132;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(599, 200);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(263, 30);
+            this.label5.TabIndex = 131;
+            this.label5.Text = "Nome / CNPJ do cliente";
+            // 
             // bugAnalytics
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1179, 939);
+            this.Controls.Add(this.tlCliente);
+            this.Controls.Add(this.label5);
             this.Controls.Add(this.tl_Expected);
             this.Controls.Add(this.label19);
             this.Controls.Add(this.tl_Found);
@@ -316,5 +337,7 @@
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.TextBox tl_Found;
         private System.Windows.Forms.Label label18;
+        private System.Windows.Forms.TextBox tlCliente;
+        private System.Windows.Forms.Label label5;
     }
 }
