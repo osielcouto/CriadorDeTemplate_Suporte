@@ -54,6 +54,9 @@
             this.bt_CNJ = new System.Windows.Forms.Button();
             this.button_Atraso = new System.Windows.Forms.Button();
             this.buttonTarefas = new System.Windows.Forms.Button();
+            this.label6 = new System.Windows.Forms.Label();
+            this.bugAnal = new System.Windows.Forms.Button();
+            this.buttonServ = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // Bug
@@ -61,7 +64,7 @@
             this.Bug.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.Bug.Cursor = System.Windows.Forms.Cursors.Default;
             this.Bug.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.Bug.Location = new System.Drawing.Point(62, 66);
+            this.Bug.Location = new System.Drawing.Point(50, 56);
             this.Bug.Name = "Bug";
             this.Bug.Size = new System.Drawing.Size(186, 45);
             this.Bug.TabIndex = 0;
@@ -73,7 +76,7 @@
             // 
             // Melhoria
             // 
-            this.Melhoria.Location = new System.Drawing.Point(62, 141);
+            this.Melhoria.Location = new System.Drawing.Point(50, 131);
             this.Melhoria.Name = "Melhoria";
             this.Melhoria.Size = new System.Drawing.Size(186, 45);
             this.Melhoria.TabIndex = 2;
@@ -86,7 +89,7 @@
             // 
             // Backup
             // 
-            this.Backup.Location = new System.Drawing.Point(286, 66);
+            this.Backup.Location = new System.Drawing.Point(274, 56);
             this.Backup.Name = "Backup";
             this.Backup.Size = new System.Drawing.Size(186, 45);
             this.Backup.TabIndex = 3;
@@ -99,7 +102,7 @@
             // 
             // RestBase
             // 
-            this.RestBase.Location = new System.Drawing.Point(742, 66);
+            this.RestBase.Location = new System.Drawing.Point(730, 56);
             this.RestBase.Name = "RestBase";
             this.RestBase.Size = new System.Drawing.Size(186, 45);
             this.RestBase.TabIndex = 4;
@@ -112,7 +115,7 @@
             // 
             // Url
             // 
-            this.Url.Location = new System.Drawing.Point(511, 66);
+            this.Url.Location = new System.Drawing.Point(499, 56);
             this.Url.Name = "Url";
             this.Url.Size = new System.Drawing.Size(186, 45);
             this.Url.TabIndex = 5;
@@ -125,7 +128,7 @@
             // 
             // Rto
             // 
-            this.Rto.Location = new System.Drawing.Point(742, 141);
+            this.Rto.Location = new System.Drawing.Point(730, 131);
             this.Rto.Name = "Rto";
             this.Rto.Size = new System.Drawing.Size(186, 45);
             this.Rto.TabIndex = 6;
@@ -138,7 +141,7 @@
             // 
             // Adv
             // 
-            this.Adv.Location = new System.Drawing.Point(511, 141);
+            this.Adv.Location = new System.Drawing.Point(499, 131);
             this.Adv.Name = "Adv";
             this.Adv.Size = new System.Drawing.Size(186, 45);
             this.Adv.TabIndex = 7;
@@ -151,7 +154,7 @@
             // 
             // Mobile
             // 
-            this.Mobile.Location = new System.Drawing.Point(286, 141);
+            this.Mobile.Location = new System.Drawing.Point(274, 131);
             this.Mobile.Name = "Mobile";
             this.Mobile.Size = new System.Drawing.Size(186, 45);
             this.Mobile.TabIndex = 8;
@@ -164,7 +167,7 @@
             // 
             // buttonAPI
             // 
-            this.buttonAPI.Location = new System.Drawing.Point(511, 407);
+            this.buttonAPI.Location = new System.Drawing.Point(499, 397);
             this.buttonAPI.Name = "buttonAPI";
             this.buttonAPI.Size = new System.Drawing.Size(186, 45);
             this.buttonAPI.TabIndex = 9;
@@ -177,7 +180,7 @@
             // 
             // buttonPre
             // 
-            this.buttonPre.Location = new System.Drawing.Point(61, 328);
+            this.buttonPre.Location = new System.Drawing.Point(49, 318);
             this.buttonPre.Name = "buttonPre";
             this.buttonPre.Size = new System.Drawing.Size(186, 45);
             this.buttonPre.TabIndex = 10;
@@ -190,7 +193,7 @@
             // 
             // button_Agend
             // 
-            this.button_Agend.Location = new System.Drawing.Point(286, 328);
+            this.button_Agend.Location = new System.Drawing.Point(274, 318);
             this.button_Agend.Name = "button_Agend";
             this.button_Agend.Size = new System.Drawing.Size(186, 45);
             this.button_Agend.TabIndex = 11;
@@ -203,7 +206,7 @@
             // 
             // button_MelDC
             // 
-            this.button_MelDC.Location = new System.Drawing.Point(286, 407);
+            this.button_MelDC.Location = new System.Drawing.Point(274, 397);
             this.button_MelDC.Name = "button_MelDC";
             this.button_MelDC.Size = new System.Drawing.Size(186, 45);
             this.button_MelDC.TabIndex = 12;
@@ -216,7 +219,7 @@
             // 
             // button_Cre
             // 
-            this.button_Cre.Location = new System.Drawing.Point(62, 407);
+            this.button_Cre.Location = new System.Drawing.Point(50, 397);
             this.button_Cre.Name = "button_Cre";
             this.button_Cre.Size = new System.Drawing.Size(186, 45);
             this.button_Cre.TabIndex = 13;
@@ -229,7 +232,7 @@
             // 
             // button_Int
             // 
-            this.button_Int.Location = new System.Drawing.Point(741, 328);
+            this.button_Int.Location = new System.Drawing.Point(729, 318);
             this.button_Int.Name = "button_Int";
             this.button_Int.Size = new System.Drawing.Size(186, 45);
             this.button_Int.TabIndex = 14;
@@ -242,7 +245,7 @@
             // 
             // button_PerCli
             // 
-            this.button_PerCli.Location = new System.Drawing.Point(61, 532);
+            this.button_PerCli.Location = new System.Drawing.Point(49, 522);
             this.button_PerCli.Name = "button_PerCli";
             this.button_PerCli.Size = new System.Drawing.Size(186, 45);
             this.button_PerCli.TabIndex = 15;
@@ -255,7 +258,7 @@
             // 
             // button_PerSup
             // 
-            this.button_PerSup.Location = new System.Drawing.Point(285, 532);
+            this.button_PerSup.Location = new System.Drawing.Point(273, 522);
             this.button_PerSup.Name = "button_PerSup";
             this.button_PerSup.Size = new System.Drawing.Size(186, 45);
             this.button_PerSup.TabIndex = 16;
@@ -270,7 +273,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label1.Location = new System.Drawing.Point(72, 33);
+            this.label1.Location = new System.Drawing.Point(60, 23);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(82, 20);
             this.label1.TabIndex = 17;
@@ -279,8 +282,9 @@
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label2.Location = new System.Drawing.Point(71, 294);
+            this.label2.Location = new System.Drawing.Point(59, 284);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(82, 20);
             this.label2.TabIndex = 18;
@@ -289,8 +293,9 @@
             // label3
             // 
             this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label3.Location = new System.Drawing.Point(71, 496);
+            this.label3.Location = new System.Drawing.Point(59, 486);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(100, 20);
             this.label3.TabIndex = 19;
@@ -300,7 +305,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label4.Location = new System.Drawing.Point(71, 629);
+            this.label4.Location = new System.Drawing.Point(59, 619);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(90, 20);
             this.label4.TabIndex = 20;
@@ -309,7 +314,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(61, 662);
+            this.button1.Location = new System.Drawing.Point(49, 652);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(186, 45);
             this.button1.TabIndex = 21;
@@ -322,7 +327,7 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(62, 217);
+            this.button2.Location = new System.Drawing.Point(50, 207);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(186, 45);
             this.button2.TabIndex = 22;
@@ -335,7 +340,7 @@
             // 
             // bt_CNJ
             // 
-            this.bt_CNJ.Location = new System.Drawing.Point(286, 217);
+            this.bt_CNJ.Location = new System.Drawing.Point(274, 207);
             this.bt_CNJ.Name = "bt_CNJ";
             this.bt_CNJ.Size = new System.Drawing.Size(186, 45);
             this.bt_CNJ.TabIndex = 23;
@@ -348,7 +353,7 @@
             // 
             // button_Atraso
             // 
-            this.button_Atraso.Location = new System.Drawing.Point(511, 328);
+            this.button_Atraso.Location = new System.Drawing.Point(499, 318);
             this.button_Atraso.Name = "button_Atraso";
             this.button_Atraso.Size = new System.Drawing.Size(186, 45);
             this.button_Atraso.TabIndex = 24;
@@ -361,7 +366,7 @@
             // 
             // buttonTarefas
             // 
-            this.buttonTarefas.Location = new System.Drawing.Point(511, 217);
+            this.buttonTarefas.Location = new System.Drawing.Point(499, 207);
             this.buttonTarefas.Name = "buttonTarefas";
             this.buttonTarefas.Size = new System.Drawing.Size(186, 45);
             this.buttonTarefas.TabIndex = 25;
@@ -372,6 +377,43 @@
             this.buttonTarefas.MouseEnter += new System.EventHandler(this.button_Tarefas_MouseEnter);
             this.buttonTarefas.MouseLeave += new System.EventHandler(this.button_Tarefas_MouseLeave);
             // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.BackColor = System.Drawing.Color.Transparent;
+            this.label6.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.label6.Location = new System.Drawing.Point(59, 731);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(149, 20);
+            this.label6.TabIndex = 27;
+            this.label6.Text = "Legal One Analytics";
+            // 
+            // bugAnal
+            // 
+            this.bugAnal.Location = new System.Drawing.Point(50, 779);
+            this.bugAnal.Name = "bugAnal";
+            this.bugAnal.Size = new System.Drawing.Size(186, 45);
+            this.bugAnal.TabIndex = 28;
+            this.bugAnal.Text = "Bug";
+            this.bugAnal.UseMnemonic = false;
+            this.bugAnal.UseVisualStyleBackColor = true;
+            this.bugAnal.Click += new System.EventHandler(this.bugAnal_Click);
+            this.bugAnal.MouseEnter += new System.EventHandler(this.button_BugAnal_MouseEnter);
+            this.bugAnal.MouseLeave += new System.EventHandler(this.button_BugAnal_MouseLeave);
+            // 
+            // buttonServ
+            // 
+            this.buttonServ.Location = new System.Drawing.Point(293, 779);
+            this.buttonServ.Name = "buttonServ";
+            this.buttonServ.Size = new System.Drawing.Size(186, 45);
+            this.buttonServ.TabIndex = 29;
+            this.buttonServ.Text = "Serviços";
+            this.buttonServ.UseMnemonic = false;
+            this.buttonServ.UseVisualStyleBackColor = true;
+            this.buttonServ.Click += new System.EventHandler(this.button3_Click);
+            this.buttonServ.MouseEnter += new System.EventHandler(this.button_buttonServ_MouseEnter);
+            this.buttonServ.MouseLeave += new System.EventHandler(this.button_buttonServ_MouseLeave);
+            // 
             // FormPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -379,7 +421,10 @@
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.ClientSize = new System.Drawing.Size(986, 761);
+            this.ClientSize = new System.Drawing.Size(1004, 870);
+            this.Controls.Add(this.buttonServ);
+            this.Controls.Add(this.bugAnal);
+            this.Controls.Add(this.label6);
             this.Controls.Add(this.buttonTarefas);
             this.Controls.Add(this.button_Atraso);
             this.Controls.Add(this.bt_CNJ);
@@ -410,7 +455,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FormPrincipal";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Criador de Template 2.4.4";
+            this.Text = "Criador de Template 2.5.0";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -443,6 +488,9 @@
         private System.Windows.Forms.Button bt_CNJ;
         private System.Windows.Forms.Button button_Atraso;
         private System.Windows.Forms.Button buttonTarefas;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Button bugAnal;
+        private System.Windows.Forms.Button buttonServ;
     }
 }
 

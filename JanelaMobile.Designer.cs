@@ -40,13 +40,7 @@
             this.criarTemplate = new System.Windows.Forms.Button();
             this.btCopiar = new System.Windows.Forms.Button();
             this.tl_template = new System.Windows.Forms.TextBox();
-            this.comboPlano = new System.Windows.Forms.ComboBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.tl_Senha = new System.Windows.Forms.TextBox();
-            this.Senha = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.tl_Tenancy = new System.Windows.Forms.TextBox();
-            this.Tenancy = new System.Windows.Forms.Label();
             this.tl_Desc = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
@@ -57,6 +51,12 @@
             this.tl_Conex = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.Titulo = new System.Windows.Forms.Label();
+            this.Tenancy = new System.Windows.Forms.Label();
+            this.tl_Tenancy = new System.Windows.Forms.TextBox();
+            this.Senha = new System.Windows.Forms.Label();
+            this.tl_Senha = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.comboPlano = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // tl_Expected
@@ -159,50 +159,6 @@
             this.tl_template.Size = new System.Drawing.Size(494, 473);
             this.tl_template.TabIndex = 66;
             // 
-            // comboPlano
-            // 
-            this.comboPlano.AutoCompleteCustomSource.AddRange(new string[] {
-            "Novajus",
-            "Next"});
-            this.comboPlano.BackColor = System.Drawing.SystemColors.Window;
-            this.comboPlano.Cursor = System.Windows.Forms.Cursors.Default;
-            this.comboPlano.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboPlano.FormattingEnabled = true;
-            this.comboPlano.Items.AddRange(new object[] {
-            "novajus",
-            "next"});
-            this.comboPlano.Location = new System.Drawing.Point(879, 107);
-            this.comboPlano.Name = "comboPlano";
-            this.comboPlano.Size = new System.Drawing.Size(121, 28);
-            this.comboPlano.TabIndex = 65;
-            this.comboPlano.SelectedIndexChanged += new System.EventHandler(this.comboPlano_SelectedIndexChanged);
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(874, 81);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(49, 20);
-            this.label4.TabIndex = 64;
-            this.label4.Text = "Plano";
-            // 
-            // tl_Senha
-            // 
-            this.tl_Senha.Location = new System.Drawing.Point(38, 171);
-            this.tl_Senha.Multiline = true;
-            this.tl_Senha.Name = "tl_Senha";
-            this.tl_Senha.Size = new System.Drawing.Size(548, 26);
-            this.tl_Senha.TabIndex = 63;
-            // 
-            // Senha
-            // 
-            this.Senha.AutoSize = true;
-            this.Senha.Location = new System.Drawing.Point(34, 147);
-            this.Senha.Name = "Senha";
-            this.Senha.Size = new System.Drawing.Size(56, 20);
-            this.Senha.TabIndex = 62;
-            this.Senha.Text = "Senha";
-            // 
             // label3
             // 
             this.label3.AutoSize = true;
@@ -211,23 +167,6 @@
             this.label3.Size = new System.Drawing.Size(43, 20);
             this.label3.TabIndex = 61;
             this.label3.Text = "User";
-            // 
-            // tl_Tenancy
-            // 
-            this.tl_Tenancy.Location = new System.Drawing.Point(620, 107);
-            this.tl_Tenancy.Name = "tl_Tenancy";
-            this.tl_Tenancy.Size = new System.Drawing.Size(240, 26);
-            this.tl_Tenancy.TabIndex = 60;
-            // 
-            // Tenancy
-            // 
-            this.Tenancy.AutoSize = true;
-            this.Tenancy.BackColor = System.Drawing.SystemColors.Control;
-            this.Tenancy.Location = new System.Drawing.Point(616, 81);
-            this.Tenancy.Name = "Tenancy";
-            this.Tenancy.Size = new System.Drawing.Size(69, 20);
-            this.Tenancy.TabIndex = 59;
-            this.Tenancy.Text = "Tenancy";
             // 
             // tl_Desc
             // 
@@ -316,6 +255,67 @@
             this.Titulo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.Titulo.UseMnemonic = false;
             // 
+            // Tenancy
+            // 
+            this.Tenancy.AutoSize = true;
+            this.Tenancy.BackColor = System.Drawing.SystemColors.Control;
+            this.Tenancy.Location = new System.Drawing.Point(616, 81);
+            this.Tenancy.Name = "Tenancy";
+            this.Tenancy.Size = new System.Drawing.Size(69, 20);
+            this.Tenancy.TabIndex = 59;
+            this.Tenancy.Text = "Tenancy";
+            // 
+            // tl_Tenancy
+            // 
+            this.tl_Tenancy.Location = new System.Drawing.Point(620, 107);
+            this.tl_Tenancy.Name = "tl_Tenancy";
+            this.tl_Tenancy.Size = new System.Drawing.Size(240, 26);
+            this.tl_Tenancy.TabIndex = 60;
+            // 
+            // Senha
+            // 
+            this.Senha.AutoSize = true;
+            this.Senha.Location = new System.Drawing.Point(34, 147);
+            this.Senha.Name = "Senha";
+            this.Senha.Size = new System.Drawing.Size(56, 20);
+            this.Senha.TabIndex = 62;
+            this.Senha.Text = "Senha";
+            // 
+            // tl_Senha
+            // 
+            this.tl_Senha.Location = new System.Drawing.Point(38, 171);
+            this.tl_Senha.Multiline = true;
+            this.tl_Senha.Name = "tl_Senha";
+            this.tl_Senha.Size = new System.Drawing.Size(548, 26);
+            this.tl_Senha.TabIndex = 63;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(874, 81);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(49, 20);
+            this.label4.TabIndex = 64;
+            this.label4.Text = "Plano";
+            // 
+            // comboPlano
+            // 
+            this.comboPlano.AutoCompleteCustomSource.AddRange(new string[] {
+            "Novajus",
+            "Next"});
+            this.comboPlano.BackColor = System.Drawing.SystemColors.Window;
+            this.comboPlano.Cursor = System.Windows.Forms.Cursors.Default;
+            this.comboPlano.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboPlano.FormattingEnabled = true;
+            this.comboPlano.Items.AddRange(new object[] {
+            "novajus",
+            "next"});
+            this.comboPlano.Location = new System.Drawing.Point(879, 107);
+            this.comboPlano.Name = "comboPlano";
+            this.comboPlano.Size = new System.Drawing.Size(121, 28);
+            this.comboPlano.TabIndex = 65;
+            this.comboPlano.SelectedIndexChanged += new System.EventHandler(this.comboPlano_SelectedIndexChanged);
+            // 
             // JanelaMobile
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -371,13 +371,7 @@
         private System.Windows.Forms.Button criarTemplate;
         private System.Windows.Forms.Button btCopiar;
         private System.Windows.Forms.TextBox tl_template;
-        private System.Windows.Forms.ComboBox comboPlano;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox tl_Senha;
-        private System.Windows.Forms.Label Senha;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox tl_Tenancy;
-        private System.Windows.Forms.Label Tenancy;
         private System.Windows.Forms.TextBox tl_Desc;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
@@ -388,5 +382,11 @@
         private System.Windows.Forms.TextBox tl_Conex;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label Titulo;
+        private System.Windows.Forms.Label Tenancy;
+        private System.Windows.Forms.TextBox tl_Tenancy;
+        private System.Windows.Forms.Label Senha;
+        private System.Windows.Forms.TextBox tl_Senha;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.ComboBox comboPlano;
     }
 }

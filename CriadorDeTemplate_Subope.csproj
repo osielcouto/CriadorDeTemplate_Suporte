@@ -70,6 +70,12 @@
     <Compile Include="API.Designer.cs">
       <DependentUpon>API.cs</DependentUpon>
     </Compile>
+    <Compile Include="bugAnalytics.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="bugAnalytics.Designer.cs">
+      <DependentUpon>bugAnalytics.cs</DependentUpon>
+    </Compile>
     <Compile Include="JanelaAgendador.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -166,6 +172,12 @@
     <Compile Include="JanelaSecreta.Designer.cs">
       <DependentUpon>JanelaSecreta.cs</DependentUpon>
     </Compile>
+    <Compile Include="JanelaServicosAnalytics.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="JanelaServicosAnalytics.Designer.cs">
+      <DependentUpon>JanelaServicosAnalytics.cs</DependentUpon>
+    </Compile>
     <Compile Include="JanelaSite.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -206,6 +218,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="API.resx">
       <DependentUpon>API.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="bugAnalytics.resx">
+      <DependentUpon>bugAnalytics.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="JanelaAgendador.resx">
       <DependentUpon>JanelaAgendador.cs</DependentUpon>
@@ -254,6 +269,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="JanelaSecreta.resx">
       <DependentUpon>JanelaSecreta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="JanelaServicosAnalytics.resx">
+      <DependentUpon>JanelaServicosAnalytics.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="JanelaSite.resx">
       <DependentUpon>JanelaSite.cs</DependentUpon>

@@ -576,6 +576,57 @@ namespace CriadorDeTemplate_Subope
         {
             Application.Run(new JanelaSecreta());
         }
+
+        private void bugAnal_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            tMelhoria = new Thread(abrirJanelaBugAnal);
+            tMelhoria.SetApartmentState(ApartmentState.STA);
+            tMelhoria.Start();
+        }
+
+        private void abrirJanelaBugAnal(object obj)
+        {
+            Application.Run(new bugAnalytics());
+        }
+
+        private void button_BugAnal_MouseEnter(object sender, EventArgs e)
+        {
+            bugAnal.ForeColor = Color.Red;
+            bugAnal.Cursor = Cursors.Hand;
+
+        }
+
+        private void button_BugAnal_MouseLeave(object sender, EventArgs e)
+        {
+            bugAnal.ForeColor = Color.Black;
+            bugAnal.Cursor = Cursors.Default;
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            tMelhoria = new Thread(abrirJanelaServAnal);
+            tMelhoria.SetApartmentState(ApartmentState.STA);
+            tMelhoria.Start();
+        }
+        private void abrirJanelaServAnal(object obj)
+        {
+            Application.Run(new JanelaServicosAnalytics());
+        }
+
+            private void button_buttonServ_MouseEnter(object sender, EventArgs e)
+        {
+            buttonServ.ForeColor = Color.Red;
+            buttonServ.Cursor = Cursors.Hand;
+
+        }
+
+        private void button_buttonServ_MouseLeave(object sender, EventArgs e)
+        {
+            buttonServ.ForeColor = Color.Black;
+            buttonServ.Cursor = Cursors.Default;
+        }
         //Fim
     }
 
