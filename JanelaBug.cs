@@ -264,6 +264,7 @@ namespace CriadorDeTemplate_Subope
 
             if (comboBox1.Text == "Contatos")
             {
+                comboBox2.Visible = true;
                 comboBox2.Items.Clear();
                 comboBox2.Items.Add("Painel");
                 comboBox2.Items.Add("Contatos");
@@ -272,6 +273,7 @@ namespace CriadorDeTemplate_Subope
 
             if (comboBox1.Text == "Agenda")
             {
+                comboBox2.Visible = true;
                 comboBox2.Items.Clear();
                 comboBox2.Items.Add("Painel");
                 comboBox2.Items.Add("Compromissos e tarefas");
@@ -287,6 +289,7 @@ namespace CriadorDeTemplate_Subope
 
             if (comboBox1.Text == "Processos")
             {
+                comboBox2.Visible = true;
                 comboBox2.Items.Clear();
                 comboBox2.Items.Add("Painel");
                 comboBox2.Items.Add("Pré-cadastro");
@@ -298,6 +301,7 @@ namespace CriadorDeTemplate_Subope
 
             if (comboBox1.Text == "Serviços")
             {
+                comboBox2.Visible = true;
                 comboBox2.Items.Clear();
                 comboBox2.Items.Add("Painel");
                 comboBox2.Items.Add("Pastas");
@@ -306,6 +310,7 @@ namespace CriadorDeTemplate_Subope
 
             if (comboBox1.Text == "Contratos")
             {
+                comboBox2.Visible = true;
                 comboBox2.Items.Clear();
                 comboBox2.Items.Add("Painel");
                 comboBox2.Items.Add("Contratos de honorário");
@@ -315,6 +320,7 @@ namespace CriadorDeTemplate_Subope
 
             if (comboBox1.Text == "Financeiro")
             {
+                comboBox2.Visible = true;
                 comboBox2.Items.Clear();
                 comboBox2.Items.Add("Painel");
                 comboBox2.Items.Add("Contas a pagar e receber");
@@ -328,6 +334,7 @@ namespace CriadorDeTemplate_Subope
 
             if (comboBox1.Text == "Faturamento")
             {
+                comboBox2.Visible = true;
                 comboBox2.Items.Clear();
                 comboBox2.Items.Add("Painel");
                 comboBox2.Items.Add("Itens faturáveis");
@@ -338,6 +345,7 @@ namespace CriadorDeTemplate_Subope
 
             if (comboBox1.Text == "Boletos")
             {
+                comboBox2.Visible = true;
                 comboBox2.Items.Clear();
                 comboBox2.Items.Add("Painel");
                 comboBox2.Items.Add("Emissão");
@@ -349,6 +357,7 @@ namespace CriadorDeTemplate_Subope
 
             if (comboBox1.Text == "GED")
             {
+                comboBox2.Visible = true;
                 comboBox2.Items.Clear();
                 comboBox2.Items.Add("Painel");
                 comboBox2.Items.Add("Arquivos");
@@ -358,12 +367,14 @@ namespace CriadorDeTemplate_Subope
 
             if (comboBox1.Text == "Conteúdo jurídico")
             {
+                comboBox2.Visible = true;
                 comboBox2.Items.Clear();
                 comboBox2.Items.Add("Revista dos tribunais online");
             }
 
             if (comboBox1.Text == "Time Sheet")
             {
+                comboBox2.Visible = true;
                 comboBox2.Items.Clear();
                 comboBox2.Items.Add("Painel");
                 comboBox2.Items.Add("Horas trabalhadas");
@@ -385,6 +396,7 @@ namespace CriadorDeTemplate_Subope
 
             if (comboBox1.Text == "Opções")
             {
+                comboBox2.Visible = true;
                 comboBox2.Items.Clear();
                 comboBox2.Items.Add("Ferramentas");
                 comboBox2.Items.Add("Configurações");
@@ -401,6 +413,7 @@ namespace CriadorDeTemplate_Subope
 
             if (comboBox1.Text == "Perfil")
             {
+                comboBox2.Visible = true;
                 comboBox2.Items.Clear();
                 comboBox2.Items.Add("Alterar perfil");
             }
@@ -417,6 +430,7 @@ namespace CriadorDeTemplate_Subope
 
             if (comboBox4.Text == "Contatos")
             {
+                comboBox3.Visible = true;
                 comboBox3.Items.Clear();
                 comboBox3.Items.Add("Painel");
                 comboBox3.Items.Add("Contatos");
@@ -425,6 +439,7 @@ namespace CriadorDeTemplate_Subope
 
             if (comboBox4.Text == "Agenda")
             {
+                comboBox3.Visible = true;
                 comboBox3.Items.Clear();
                 comboBox3.Items.Add("Painel");
                 comboBox3.Items.Add("Compromissos e tarefas");
@@ -440,6 +455,7 @@ namespace CriadorDeTemplate_Subope
 
             if (comboBox4.Text == "Processos")
             {
+                comboBox3.Visible = true;
                 comboBox3.Items.Clear();
                 comboBox3.Items.Add("Painel");
                 comboBox3.Items.Add("Pré-cadastro");
@@ -451,6 +467,7 @@ namespace CriadorDeTemplate_Subope
 
             if (comboBox4.Text == "Serviços")
             {
+                comboBox3.Visible = true;
                 comboBox3.Items.Clear();
                 comboBox3.Items.Add("Painel");
                 comboBox3.Items.Add("Pastas");
@@ -459,6 +476,7 @@ namespace CriadorDeTemplate_Subope
 
             if (comboBox4.Text == "Contratos")
             {
+                comboBox3.Visible = true;
                 comboBox3.Items.Clear();
                 comboBox3.Items.Add("Painel");
                 comboBox3.Items.Add("Contratos de honorário");
@@ -468,6 +486,7 @@ namespace CriadorDeTemplate_Subope
 
             if (comboBox4.Text == "Financeiro")
             {
+                comboBox3.Visible = true;
                 comboBox3.Items.Clear();
                 comboBox3.Items.Add("Painel");
                 comboBox3.Items.Add("Contas a pagar e receber");
@@ -481,6 +500,7 @@ namespace CriadorDeTemplate_Subope
 
             if (comboBox4.Text == "Faturamento")
             {
+                comboBox3.Visible = true;
                 comboBox3.Items.Clear();
                 comboBox3.Items.Add("Painel");
                 comboBox3.Items.Add("Itens faturáveis");
@@ -491,6 +511,7 @@ namespace CriadorDeTemplate_Subope
 
             if (comboBox4.Text == "Boletos")
             {
+                comboBox3.Visible = true;
                 comboBox3.Items.Clear();
                 comboBox3.Items.Add("Painel");
                 comboBox3.Items.Add("Emissão");
@@ -502,6 +523,7 @@ namespace CriadorDeTemplate_Subope
 
             if (comboBox4.Text == "GED")
             {
+                comboBox3.Visible = true;
                 comboBox3.Items.Clear();
                 comboBox3.Items.Add("Painel");
                 comboBox3.Items.Add("Arquivos");
@@ -511,12 +533,14 @@ namespace CriadorDeTemplate_Subope
 
             if (comboBox4.Text == "Conteúdo jurídico")
             {
+                comboBox3.Visible = true;
                 comboBox3.Items.Clear();
                 comboBox3.Items.Add("Revista dos tribunais online");
             }
 
             if (comboBox4.Text == "Time Sheet")
             {
+                comboBox3.Visible = true;
                 comboBox3.Items.Clear();
                 comboBox3.Items.Add("Painel");
                 comboBox3.Items.Add("Horas trabalhadas");
@@ -538,6 +562,7 @@ namespace CriadorDeTemplate_Subope
 
             if (comboBox4.Text == "Opções")
             {
+                comboBox3.Visible = true;
                 comboBox3.Items.Clear();
                 comboBox3.Items.Add("Ferramentas");
                 comboBox3.Items.Add("Configurações");
@@ -554,6 +579,7 @@ namespace CriadorDeTemplate_Subope
 
             if (comboBox4.Text == "Perfil")
             {
+                comboBox3.Visible = true;
                 comboBox3.Items.Clear();
                 comboBox3.Items.Add("Alterar perfil");
             }
@@ -580,6 +606,7 @@ namespace CriadorDeTemplate_Subope
 
             if (comboBox6.Text == "Contatos")
             {
+                comboBox5.Visible = true;
                 comboBox5.Items.Clear();
                 comboBox5.Items.Add("Painel");
                 comboBox5.Items.Add("Contatos");
@@ -588,6 +615,7 @@ namespace CriadorDeTemplate_Subope
 
             if (comboBox6.Text == "Agenda")
             {
+                comboBox5.Visible = true;
                 comboBox5.Items.Clear();
                 comboBox5.Items.Add("Painel");
                 comboBox5.Items.Add("Compromissos e tarefas");
@@ -603,6 +631,7 @@ namespace CriadorDeTemplate_Subope
 
             if (comboBox6.Text == "Processos")
             {
+                comboBox5.Visible = true;
                 comboBox5.Items.Clear();
                 comboBox5.Items.Add("Painel");
                 comboBox5.Items.Add("Pré-cadastro");
@@ -614,6 +643,7 @@ namespace CriadorDeTemplate_Subope
 
             if (comboBox6.Text == "Serviços")
             {
+                comboBox5.Visible = true;
                 comboBox5.Items.Clear();
                 comboBox5.Items.Add("Painel");
                 comboBox5.Items.Add("Pastas");
@@ -622,6 +652,7 @@ namespace CriadorDeTemplate_Subope
 
             if (comboBox6.Text == "Contratos")
             {
+                comboBox5.Visible = true;
                 comboBox5.Items.Clear();
                 comboBox5.Items.Add("Painel");
                 comboBox5.Items.Add("Contratos de honorário");
@@ -631,6 +662,7 @@ namespace CriadorDeTemplate_Subope
 
             if (comboBox6.Text == "Financeiro")
             {
+                comboBox5.Visible = true;
                 comboBox5.Items.Clear();
                 comboBox5.Items.Add("Painel");
                 comboBox5.Items.Add("Contas a pagar e receber");
@@ -644,6 +676,7 @@ namespace CriadorDeTemplate_Subope
 
             if (comboBox6.Text == "Faturamento")
             {
+                comboBox5.Visible = true;
                 comboBox5.Items.Clear();
                 comboBox5.Items.Add("Painel");
                 comboBox5.Items.Add("Itens faturáveis");
@@ -654,6 +687,7 @@ namespace CriadorDeTemplate_Subope
 
             if (comboBox6.Text == "Boletos")
             {
+                comboBox5.Visible = true;
                 comboBox5.Items.Clear();
                 comboBox5.Items.Add("Painel");
                 comboBox5.Items.Add("Emissão");
@@ -665,6 +699,7 @@ namespace CriadorDeTemplate_Subope
 
             if (comboBox6.Text == "GED")
             {
+                comboBox5.Visible = true;
                 comboBox5.Items.Clear();
                 comboBox5.Items.Add("Painel");
                 comboBox5.Items.Add("Arquivos");
@@ -674,12 +709,14 @@ namespace CriadorDeTemplate_Subope
 
             if (comboBox6.Text == "Conteúdo jurídico")
             {
+                comboBox5.Visible = true;
                 comboBox5.Items.Clear();
                 comboBox5.Items.Add("Revista dos tribunais online");
             }
 
             if (comboBox6.Text == "Time Sheet")
             {
+                comboBox5.Visible = true;
                 comboBox5.Items.Clear();
                 comboBox5.Items.Add("Painel");
                 comboBox5.Items.Add("Horas trabalhadas");
@@ -701,6 +738,7 @@ namespace CriadorDeTemplate_Subope
 
             if (comboBox6.Text == "Opções")
             {
+                comboBox5.Visible = true;
                 comboBox5.Items.Clear();
                 comboBox5.Items.Add("Ferramentas");
                 comboBox5.Items.Add("Configurações");
@@ -717,6 +755,7 @@ namespace CriadorDeTemplate_Subope
 
             if (comboBox6.Text == "Perfil")
             {
+                comboBox5.Visible = true;
                 comboBox5.Items.Clear();
                 comboBox5.Items.Add("Alterar perfil");
             }
@@ -733,6 +772,7 @@ namespace CriadorDeTemplate_Subope
 
             if (comboBox8.Text == "Contatos")
             {
+                comboBox7.Visible = true;
                 comboBox7.Items.Clear();
                 comboBox7.Items.Add("Painel");
                 comboBox7.Items.Add("Contatos");
@@ -741,6 +781,7 @@ namespace CriadorDeTemplate_Subope
 
             if (comboBox8.Text == "Agenda")
             {
+                comboBox7.Visible = true;
                 comboBox7.Items.Clear();
                 comboBox7.Items.Add("Painel");
                 comboBox7.Items.Add("Compromissos e tarefas");
@@ -756,6 +797,7 @@ namespace CriadorDeTemplate_Subope
 
             if (comboBox8.Text == "Processos")
             {
+                comboBox7.Visible = true;
                 comboBox7.Items.Clear();
                 comboBox7.Items.Add("Painel");
                 comboBox7.Items.Add("Pré-cadastro");
@@ -767,6 +809,7 @@ namespace CriadorDeTemplate_Subope
 
             if (comboBox8.Text == "Serviços")
             {
+                comboBox7.Visible = true;
                 comboBox7.Items.Clear();
                 comboBox7.Items.Add("Painel");
                 comboBox7.Items.Add("Pastas");
@@ -775,6 +818,7 @@ namespace CriadorDeTemplate_Subope
 
             if (comboBox8.Text == "Contratos")
             {
+                comboBox7.Visible = true;
                 comboBox7.Items.Clear();
                 comboBox7.Items.Add("Painel");
                 comboBox7.Items.Add("Contratos de honorário");
@@ -784,6 +828,7 @@ namespace CriadorDeTemplate_Subope
 
             if (comboBox8.Text == "Financeiro")
             {
+                comboBox7.Visible = true;
                 comboBox7.Items.Clear();
                 comboBox7.Items.Add("Painel");
                 comboBox7.Items.Add("Contas a pagar e receber");
@@ -797,6 +842,7 @@ namespace CriadorDeTemplate_Subope
 
             if (comboBox8.Text == "Faturamento")
             {
+                comboBox7.Visible = true;
                 comboBox7.Items.Clear();
                 comboBox7.Items.Add("Painel");
                 comboBox7.Items.Add("Itens faturáveis");
@@ -807,6 +853,7 @@ namespace CriadorDeTemplate_Subope
 
             if (comboBox8.Text == "Boletos")
             {
+                comboBox7.Visible = true;
                 comboBox7.Items.Clear();
                 comboBox7.Items.Add("Painel");
                 comboBox7.Items.Add("Emissão");
@@ -818,6 +865,7 @@ namespace CriadorDeTemplate_Subope
 
             if (comboBox8.Text == "GED")
             {
+                comboBox7.Visible = true;
                 comboBox7.Items.Clear();
                 comboBox7.Items.Add("Painel");
                 comboBox7.Items.Add("Arquivos");
@@ -827,12 +875,14 @@ namespace CriadorDeTemplate_Subope
 
             if (comboBox8.Text == "Conteúdo jurídico")
             {
+                comboBox7.Visible = true;
                 comboBox7.Items.Clear();
                 comboBox7.Items.Add("Revista dos tribunais online");
             }
 
             if (comboBox8.Text == "Time Sheet")
             {
+                comboBox7.Visible = true;
                 comboBox7.Items.Clear();
                 comboBox7.Items.Add("Painel");
                 comboBox7.Items.Add("Horas trabalhadas");
@@ -854,6 +904,7 @@ namespace CriadorDeTemplate_Subope
 
             if (comboBox8.Text == "Opções")
             {
+                comboBox7.Visible = true;
                 comboBox7.Items.Clear();
                 comboBox7.Items.Add("Ferramentas");
                 comboBox7.Items.Add("Configurações");
@@ -870,6 +921,7 @@ namespace CriadorDeTemplate_Subope
 
             if (comboBox8.Text == "Perfil")
             {
+                comboBox7.Visible = true;
                 comboBox7.Items.Clear();
                 comboBox7.Items.Add("Alterar perfil");
             }
@@ -935,7 +987,7 @@ namespace CriadorDeTemplate_Subope
 
         private void ValidaSteps1()
         {
-            if (comboBox1.Text == "Home" || comboBox1.Text == "Publicações")
+            if (comboBox1.Text == "Home" || comboBox1.Text == "Publicações" || comboBox1.Text == "Workflow" || comboBox1.Text == "Mesas de trabalho")
             {
                 RSteps1();
             }
@@ -944,7 +996,7 @@ namespace CriadorDeTemplate_Subope
 
         private void ValidaSteps2()
         {
-            if (comboBox4.Text == "Home" || comboBox4.Text == "Publicações")
+            if (comboBox4.Text == "Home" || comboBox4.Text == "Publicações" || comboBox4.Text == "Workflow" || comboBox4.Text == "Mesas de trabalho")
             {
                 RSteps2();
             }
@@ -953,7 +1005,7 @@ namespace CriadorDeTemplate_Subope
 
         private void ValidaSteps3()
         {
-            if (comboBox6.Text == "Home" || comboBox6.Text == "Publicações")
+            if (comboBox6.Text == "Home" || comboBox6.Text == "Publicações" || comboBox6.Text == "Workflow" || comboBox6.Text == "Mesas de trabalho")
             {
                 RSteps3();
             }
@@ -962,7 +1014,7 @@ namespace CriadorDeTemplate_Subope
 
         private void ValidaSteps4()
         {
-            if (comboBox8.Text == "Home" || comboBox8.Text == "Publicações")
+            if (comboBox8.Text == "Home" || comboBox8.Text == "Publicações" || comboBox8.Text == "Workflow" || comboBox8.Text == "Mesas de trabalho")
             {
                 RSteps4();
             }
