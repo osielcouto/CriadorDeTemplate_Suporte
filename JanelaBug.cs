@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Drawing.Text;
 using System.Linq;
 using System.Text;
 using System.Threading;
@@ -28,7 +29,7 @@ namespace CriadorDeTemplate_Subope
             tVoltar.SetApartmentState(ApartmentState.STA);
             tVoltar.Start();
         }
-        
+
         private void voltarJanelaPrincipal(object obj)
         {
             Application.Run(new FormPrincipal());
@@ -245,9 +246,9 @@ namespace CriadorDeTemplate_Subope
         }
 
 
-        
 
-       
+
+
         //populando submodulos
 
         //submodulo steps 1
@@ -255,7 +256,7 @@ namespace CriadorDeTemplate_Subope
         {
 
             //submodulo steps 1
-            if(comboBox1.Text == "Home")
+            if (comboBox1.Text == "Home")
             {
                 comboBox2.Items.Clear();
                 comboBox2.Visible = false;
@@ -560,12 +561,12 @@ namespace CriadorDeTemplate_Subope
         //submodulo steps 3
         private void comboBox5_SelectedIndexChanged(object sender, EventArgs e)
         {
-            
+
         }
         //submodulo steps 4
         private void comboBox7_SelectedIndexChanged(object sender, EventArgs e)
         {
-            
+
         }
         //subomodulo steps 3
         private void comboBox6_SelectedIndexChanged(object sender, EventArgs e)
@@ -892,28 +893,112 @@ namespace CriadorDeTemplate_Subope
             comboSteps.SelectedIndex = 0;
         }
 
+        private void Steps1()
+        {
+            tl_template.Text += "Steps 1:" + "\r\n" + "Clicar no módulo " + comboBox1.Text + "\r\n" + "Clicar no submódulo " + comboBox2.Text + "\r\n" + textBox1.Text + "\r\n" + "\r\n" + "\r\n";
+        }
+
+        private void Steps3()
+        {
+            tl_template.Text += "Steps 3:" + "\r\n" + "Clicar no módulo " + comboBox6.Text + "\r\n" + "Clicar no submódulo " + comboBox5.Text + "\r\n" + textBox3.Text + "\r\n" + "\r\n" + textBox4.Text + "\r\n" + "\r\n" + "\r\n";
+        }
+
+        private void Steps2()
+            {
+            tl_template.Text += "Steps 2:" + "\r\n" + "Clicar no módulo " + comboBox4.Text + "\r\n" + "Clicar no submódulo " + comboBox3.Text + "\r\n" + textBox2.Text + "\r\n" + "\r\n" + "\r\n";
+        }
+
+        private void Steps4()
+        {
+            tl_template.Text += "Steps 4:" + "\r\n" + "Clicar no módulo " + comboBox8.Text + "\r\n" + "Clicar no submódulo " + comboBox7.Text + "\r\n" + textBox4.Text + "\r\n" + "\r\n";
+        }
+
+        private void RSteps1()
+        {
+            tl_template.Text += "Steps 1:" + "\r\n" + "Clicar no módulo " + comboBox1.Text + "\r\n" + textBox1.Text + "\r\n" + "\r\n" + "\r\n";
+        }
+
+        private void RSteps3()
+        {
+            tl_template.Text += "Steps 3:" + "\r\n" + "Clicar no módulo " + comboBox6.Text + "\r\n" + textBox3.Text + "\r\n" + "\r\n" + textBox4.Text + "\r\n" + "\r\n" + "\r\n";
+        }
+
+        private void RSteps2()
+        {
+            tl_template.Text += "Steps 2:" + "\r\n" + "Clicar no módulo " + comboBox4.Text + "\r\n" + textBox2.Text + "\r\n" + "\r\n" + "\r\n";
+        }
+
+        private void RSteps4()
+        {
+            tl_template.Text += "Steps 4:" + "\r\n" + "Clicar no módulo " + comboBox8.Text + "\r\n" + textBox4.Text + "\r\n" + "\r\n";
+        }
+
+        private void ValidaSteps1()
+        {
+            if (comboBox1.Text == "Home" || comboBox1.Text == "Publicações")
+            {
+                RSteps1();
+            }
+            else { Steps1(); }
+        }
+
+        private void ValidaSteps2()
+        {
+            if (comboBox4.Text == "Home" || comboBox4.Text == "Publicações")
+            {
+                RSteps2();
+            }
+            else { Steps2(); }
+        }
+
+        private void ValidaSteps3()
+        {
+            if (comboBox6.Text == "Home" || comboBox6.Text == "Publicações")
+            {
+                RSteps3();
+            }
+            else { Steps3(); }
+        }
+
+        private void ValidaSteps4()
+        {
+            if (comboBox8.Text == "Home" || comboBox8.Text == "Publicações")
+            {
+                RSteps4();
+            }
+            else { Steps4(); }
+        }
         private void finalizarMelhoria_Click(object sender, EventArgs e)
         {
+            //Cabeçalho e limpar lixo residual
+            tl_template.Text = "Descrição/Assunto: Bug - " + tl_Desc.Text + "\r\n" + "URL: http://" + tl_Tenancy.Text + "." + comboPlano.Text + ".com.br" + "\r\n" + "Login Type: " + comboPlano.Text + "\r\n" + "Account: " + tl_Tenancy.Text + "\r\n" + "User: " + tl_user.Text + "\r\n" + "Password: " + tl_Senha.Text + "\r\n" + "\r\n" + "\r\n" + "(Opcional) Login do usuário que reportou o problema:" + "\r\n" + tl_userProb.Text + "\r\n" + "\r\n" + "(Opcional) Note:" + "\r\n" + tl_note.Text + "\r\n" + "\r\n" + "\r\n";
             if (comboSteps.SelectedIndex == 0)
             {
-                tl_template.Text = "Descrição/Assunto: Bug - " + tl_Desc.Text + "\r\n" + "URL: http://" + tl_Tenancy.Text + "." + comboPlano.Text + ".com.br" + "\r\n" + "Login Type: " + comboPlano.Text + "\r\n" + "Account: " + tl_Tenancy.Text + "\r\n" + "User: " + tl_user.Text + "\r\n" + "Password: " + tl_Senha.Text + "\r\n" + "\r\n" + "\r\n"+"(Opcional) Login do usuário que reportou o problema:" + "\r\n" + tl_userProb.Text + "\r\n" + "\r\n" + "(Opcional) Note:" + "\r\n" + tl_note.Text + "\r\n" + "\r\n" + "\r\n" + "Steps 1:" + "\r\n" + "Clicar no módulo " + comboBox1.Text + "\r\n" + "Clicar no submódulo " + comboBox2.Text + "\r\n" + textBox1.Text + "\r\n" + "\r\n" + "\r\n" + "Found Results:" + "\r\n" + textBox5.Text + "\r\n" + "\r\n" + "Expected Results:" + "\r\n" + textBox6.Text;
+                ValidaSteps1 ();
             }
 
             if (comboSteps.SelectedIndex == 1)
             {
-                tl_template.Text = "Descrição/Assunto: Bug - " + tl_Desc.Text + "\r\n" + "URL: http://" + tl_Tenancy.Text + "." + comboPlano.Text + ".com.br" + "\r\n" + "Login Type: " + comboPlano.Text + "\r\n" + "Account: " + tl_Tenancy.Text + "\r\n" + "User: " + tl_user.Text + "\r\n" + "Password: " + tl_Senha.Text + "\r\n" + "\r\n" + "\r\n" + "(Opcional) Login do usuário que reportou o problema:" + "\r\n" + tl_userProb.Text + "\r\n" + "\r\n" + "(Opcional) Note:" + "\r\n" + tl_note.Text + "\r\n" + "\r\n" + "\r\n" + "Steps 1:" + "\r\n" + "Clicar no módulo " + comboBox1.Text + "\r\n" + "Clicar no submódulo " + comboBox2.Text + "\r\n" + textBox1.Text + "\r\n" + "\r\n" + "Steps 2:" + "\r\n" + "Clicar no módulo " + comboBox4.Text + "\r\n" + "Clicar no submódulo " + comboBox3.Text + "\r\n" + textBox2.Text + "\r\n" + "\r\n" + "\r\n" + "Found Results:" + "\r\n" + textBox5.Text + "\r\n" + "\r\n" + "Expected Results:" + "\r\n" + textBox6.Text;
+                ValidaSteps1();
+                ValidaSteps2();
             }
 
             if (comboSteps.SelectedIndex == 2)
             {
-                tl_template.Text = "Descrição/Assunto: Bug - " + tl_Desc.Text + "\r\n" + "URL: http://" + tl_Tenancy.Text + "." + comboPlano.Text + ".com.br" + "\r\n" + "Login Type: " + comboPlano.Text + "\r\n" + "Account: " + tl_Tenancy.Text + "\r\n" + "User: " + tl_user.Text + "\r\n" + "Password: " + tl_Senha.Text + "\r\n" + "\r\n" + "\r\n" + "(Opcional) Login do usuário que reportou o problema:" + "\r\n" + tl_userProb.Text + "\r\n" + "\r\n" + "(Opcional) Note:" + "\r\n" + tl_note.Text + "\r\n" + "\r\n" + "\r\n" + "Steps 1:" + "\r\n" + "Clicar no módulo " + comboBox1.Text + "\r\n" + "Clicar no submódulo " + comboBox2.Text + "\r\n" + textBox1.Text + "\r\n" + "\r\n" + "Steps 2:" + "\r\n" + "Clicar no módulo " + comboBox4.Text + "\r\n" + "Clicar no submódulo " + comboBox3.Text + "\r\n" + textBox2.Text + "\r\n" + "\r\n" + "Steps 3:" + "\r\n" + "Clicar no módulo " + comboBox6.Text + "\r\n" + "Clicar no submódulo " + comboBox5.Text + "\r\n" + textBox3.Text + "\r\n" + "\r\n" + textBox4.Text + "\r\n" + "\r\n" + "\r\n" + "Found Results:" + "\r\n" + textBox5.Text + "\r\n" + "\r\n" + "Expected Results:" + "\r\n" + textBox6.Text;
+                ValidaSteps1();
+                ValidaSteps2();
+                ValidaSteps3();
             }
 
             if (comboSteps.SelectedIndex == 3)
             {
-                tl_template.Text = "Descrição/Assunto: Bug - " + tl_Desc.Text + "\r\n" + "URL: http://" + tl_Tenancy.Text + "." + comboPlano.Text + ".com.br" + "\r\n" + "Login Type: " + comboPlano.Text + "\r\n" + "Account: " + tl_Tenancy.Text + "\r\n" + "User: " + tl_user.Text + "\r\n" + "Password: " + tl_Senha.Text + "\r\n" + "\r\n" + "\r\n" + "(Opcional) Login do usuário que reportou o problema:" + "\r\n" + tl_userProb.Text + "\r\n" + "\r\n" + "(Opcional) Note:" + "\r\n" + tl_note.Text + "\r\n" + "\r\n" + "\r\n" + "Steps 1:" + "\r\n" + "Clicar no módulo " + comboBox1.Text + "\r\n" + "Clicar no submódulo " + comboBox2.Text + "\r\n" + textBox1.Text + "\r\n" + "\r\n" + "Steps 2:" + "\r\n" + "Clicar no módulo " + comboBox4.Text + "\r\n" + "Clicar no submódulo " + comboBox3.Text + "\r\n" + textBox2.Text + "\r\n" + "\r\n" + "Steps 3:" + "\r\n" + "Clicar no módulo " + comboBox6.Text + "\r\n" + "Clicar no submódulo " + comboBox5.Text + "\r\n" + textBox3.Text + "\r\n" + "\r\n" + "Steps 4:" + "\r\n" + "Clicar no módulo " + comboBox8.Text + "\r\n" + "Clicar no submódulo " + comboBox7.Text + "\r\n" + textBox4.Text + "\r\n" + "\r\n" + "Found Results:" + "\r\n" + textBox5.Text + "\r\n" + "\r\n" + "Expected Results:" + "\r\n" + textBox6.Text;
-
+                ValidaSteps1();
+                ValidaSteps2();
+                ValidaSteps3();
+                ValidaSteps4();
             }
+            //Incluindo found e expected
+            tl_template.Text += "Found Results:" + "\r\n" + textBox5.Text + "\r\n" + "\r\n" + "Expected Results:" + "\r\n" + textBox6.Text;
         }
     }
 }

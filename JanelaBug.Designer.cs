@@ -192,17 +192,17 @@
             // tl_template
             // 
             this.tl_template.Cursor = System.Windows.Forms.Cursors.Cross;
-            this.tl_template.Location = new System.Drawing.Point(615, 613);
+            this.tl_template.Location = new System.Drawing.Point(1147, 22);
             this.tl_template.Multiline = true;
             this.tl_template.Name = "tl_template";
             this.tl_template.ReadOnly = true;
-            this.tl_template.Size = new System.Drawing.Size(518, 409);
+            this.tl_template.Size = new System.Drawing.Size(680, 1009);
             this.tl_template.TabIndex = 22;
             this.tl_template.TextChanged += new System.EventHandler(this.tl_template_TextChanged);
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(616, 1028);
+            this.button3.Location = new System.Drawing.Point(1147, 1037);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(146, 35);
             this.button3.TabIndex = 23;
@@ -515,7 +515,7 @@
             this.textBox5.Location = new System.Drawing.Point(27, 634);
             this.textBox5.Multiline = true;
             this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(559, 160);
+            this.textBox5.Size = new System.Drawing.Size(1106, 160);
             this.textBox5.TabIndex = 54;
             // 
             // textBox6
@@ -523,7 +523,7 @@
             this.textBox6.Location = new System.Drawing.Point(27, 864);
             this.textBox6.Multiline = true;
             this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(560, 158);
+            this.textBox6.Size = new System.Drawing.Size(1106, 158);
             this.textBox6.TabIndex = 56;
             // 
             // label19
@@ -577,7 +577,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.ClientSize = new System.Drawing.Size(1156, 1078);
+            this.ClientSize = new System.Drawing.Size(1893, 1078);
             this.Controls.Add(this.tl_note);
             this.Controls.Add(this.label20);
             this.Controls.Add(this.tl_userProb);
@@ -631,8 +631,9 @@
             this.DoubleBuffered = true;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "JanelaBug";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
             this.Text = "JanelaBug";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.comboPlano_SelectedIndexChanged);
             this.ResumeLayout(false);
             this.PerformLayout();
