@@ -39,6 +39,11 @@ namespace CriadorDeTemplate_Subope
             Application.Run(new FormPrincipal());
         }
 
+        private void validaNote()
+        {
+            tl_Template.Text += "(Opcional) Note:" + "\r\n" + tl_note.Text + "\r\n" + "\r\n" + "\r\n";
+        }
+
         private void but_CriarTemplate_Click(object sender, EventArgs e)
         {
             //Sem parametro adicional
@@ -49,11 +54,15 @@ namespace CriadorDeTemplate_Subope
                 "Login Type: " + comboPlano.Text + "\r\n" +
                 "Account: " + tl_Tenancy.Text + "\r\n" +
                 "User: " + tl_user.Text + "\r\n" +
-                "Password: " + tl_Senha.Text + "\r\n" + "\r\n" + "\r\n" +
+                "Password: " + tl_Senha.Text + "\r\n" + "\r\n" + "\r\n";
+                if (tl_note.Text != "")
+                {
+                    validaNote();
+                }
 
-                "(Opcional) Note:" + "\r\n" + tl_note.Text + "\r\n" + "\r\n" + "\r\n" +
+                //"(Opcional) Note:" + "\r\n" + tl_note.Text + "\r\n" + "\r\n" + "\r\n" +
 
-                "Steps Legal One:" + "\r\n" + tl_steps.Text + "\r\n" + "\r\n" +
+                tl_Template.Text += "Steps Legal One:" + "\r\n" + tl_steps.Text + "\r\n" + "\r\n" +
 
                 "Steps Cadastro do processo:" + "\r\n" +
                 "- Número do processo: " + tl_numProc.Text + "\r\n" +
@@ -77,11 +86,15 @@ namespace CriadorDeTemplate_Subope
                 "Login Type: " + comboPlano.Text + "\r\n" +
                 "Account: " + tl_Tenancy.Text + "\r\n" +
                 "User: " + tl_user.Text + "\r\n" +
-                "Password: " + tl_Senha.Text + "\r\n" + "\r\n" + "\r\n" +
+                "Password: " + tl_Senha.Text + "\r\n" + "\r\n" + "\r\n";
+                if (tl_note.Text != "")
+                {
+                    validaNote();
+                }
 
-                "(Opcional) Note:" + "\r\n" + tl_note.Text + "\r\n" + "\r\n" + "\r\n" +
+                //"(Opcional) Note:" + "\r\n" + tl_note.Text + "\r\n" + "\r\n" + "\r\n" +
 
-                "Steps Legal One:" + "\r\n" + tl_steps.Text + "\r\n" + "\r\n" +
+                tl_Template.Text += "Steps Legal One:" + "\r\n" + tl_steps.Text + "\r\n" + "\r\n" +
 
                 "Steps Cadastro do processo:" + "\r\n" +
                 "- Número do processo: " + tl_numProc.Text + "\r\n" +
@@ -106,11 +119,16 @@ namespace CriadorDeTemplate_Subope
                 "Login Type: " + comboPlano.Text + "\r\n" +
                 "Account: " + tl_Tenancy.Text + "\r\n" +
                 "User: " + tl_user.Text + "\r\n" +
-                "Password: " + tl_Senha.Text + "\r\n" + "\r\n" + "\r\n" +
+                "Password: " + tl_Senha.Text + "\r\n" + "\r\n" + "\r\n";
 
-                "(Opcional) Note:" + "\r\n" + tl_note.Text + "\r\n" + "\r\n" + "\r\n" +
+                if (tl_note.Text != "")
+                {
+                    validaNote();
+                }
 
-                "Steps Legal One:" + "\r\n" + tl_steps.Text + "\r\n" + "\r\n" +
+                //"(Opcional) Note:" + "\r\n" + tl_note.Text + "\r\n" + "\r\n" + "\r\n" +
+
+                tl_Template.Text += "Steps Legal One:" + "\r\n" + tl_steps.Text + "\r\n" + "\r\n" +
 
                 "Steps Cadastro do processo:" + "\r\n" +
                 "- Número do processo: " + tl_numProc.Text + "\r\n" +
@@ -135,11 +153,16 @@ namespace CriadorDeTemplate_Subope
                 "Login Type: " + comboPlano.Text + "\r\n" +
                 "Account: " + tl_Tenancy.Text + "\r\n" +
                 "User: " + tl_user.Text + "\r\n" +
-                "Password: " + tl_Senha.Text + "\r\n" + "\r\n" + "\r\n" +
+                "Password: " + tl_Senha.Text + "\r\n" + "\r\n" + "\r\n";
 
-                "(Opcional) Note:" + "\r\n" + tl_note.Text + "\r\n" + "\r\n" + "\r\n" +
+                if (tl_note.Text != "")
+                {
+                    validaNote();
+                }
 
-                "Steps Legal One:" + "\r\n" + tl_steps.Text + "\r\n" + "\r\n" +
+                //"(Opcional) Note:" + "\r\n" + tl_note.Text + "\r\n" + "\r\n" + "\r\n" +
+
+                tl_Template.Text += "Steps Legal One:" + "\r\n" + tl_steps.Text + "\r\n" + "\r\n" +
 
                 "Steps Cadastro do processo:" + "\r\n" +
                 "- Número do processo: " + tl_numProc.Text + "\r\n" +

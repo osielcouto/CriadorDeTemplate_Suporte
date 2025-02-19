@@ -54,12 +54,17 @@ namespace CriadorDeTemplate_Subope
 
         private void criarTemplate_Click(object sender, EventArgs e)
         {
-            tl_template.Text = 
+            tl_template.Text =
                 "Descrição/Assunto: " + tl_Desc.Text + "\r\n" +
                 "Nome/CNPJ do cliente: " + tlCliente.Text + "\r\n" +
-                "Login/Nome do usuário: " + tl_Login.Text + "\r\n" + "\r\n" +
+                "Login/Nome do usuário: " + tl_Login.Text + "\r\n" + "\r\n";
 
-                "Steps:" + "\r\n" + tl_Steps.Text + "\r\n" + "\r\n"+
+                if (tlNote.Text != "")
+            {
+                validaNote();
+            }
+
+            tl_template.Text += "Steps:" + "\r\n" + tl_Steps.Text + "\r\n" + "\r\n"+
 
 
                 "Anexos:" + tlEvid.Text +"\r\n"+ "\r\n" +
@@ -67,6 +72,10 @@ namespace CriadorDeTemplate_Subope
                 "Found Results:" + "\r\n" + tl_Found.Text + "\r\n" + "\r\n" +
 
                 "Expected Results:" + "\r\n" + tl_Expected.Text;
+        }
+        private void validaNote()
+        {
+            tl_template.Text += "(Opcional) Note:" + "\r\n" + tlNote.Text + "\r\n" + "\r\n" + "\r\n";
         }
     }
 }

@@ -32,7 +32,10 @@ namespace CriadorDeTemplate_Subope
         {
             Application.Run(new FormPrincipal());
         }
-
+        private void validaNote()
+        {
+            tl_Template.Text += "(Opcional) Note:" + "\r\n" + tl_note.Text + "\r\n" + "\r\n" + "\r\n";
+        }
         private void but_CriarTemplate_Click(object sender, EventArgs e)
         {
             //Consulta publica
@@ -44,12 +47,15 @@ namespace CriadorDeTemplate_Subope
                 "Login Type: " + comboPlano.Text + "\r\n" +
                 "Account: " + tl_Tenancy.Text + "\r\n" +
                 "User: " + tl_user.Text + "\r\n" +
-                "Password: " + tl_Senha.Text + "\r\n" + "\r\n" + "\r\n" +
+                "Password: " + tl_Senha.Text + "\r\n" + "\r\n" + "\r\n";
+                if (tl_note.Text != "")
+                {
+                    validaNote();
+                }
 
+                //"Note(Optional)" + "\r\n" + tl_note.Text + "\r\n" + "\r\n" +
 
-                    "Note(Optional)" + "\r\n" + tl_note.Text + "\r\n" + "\r\n" +
-
-                    "Steps Histórico de consultas: " + "\r\n" +
+                tl_Template.Text += "Steps Histórico de consultas: " + "\r\n" +
                     "- Acesse o módulo Opções"+ "\r\n" +
                     "- Acesse o submódulo Configurações"+ "\r\n" +
                     "- Na seção Datacloud andamentos (Movimentações no Tribunal/Órgão) clique em Histórico de consultas" + "\r\n" +

@@ -40,7 +40,10 @@ namespace CriadorDeTemplate_Subope
             MessageBox.Show("Texto copiado");
             return;
         }
-
+        private void validaNote()
+        {
+            tl_template.Text += "(Opcional) Note:" + "\r\n" + tl_Note.Text + "\r\n" + "\r\n" + "\r\n";
+        }
         private void btLimpar_Click(object sender, EventArgs e)
         {
             tl_Secret.Clear();
@@ -64,12 +67,16 @@ namespace CriadorDeTemplate_Subope
                  "URL: http://" + tl_Tenancy.Text + "." + comboPlano.Text + ".com.br" + "\r\n" +
                  "Login Type: " + comboPlano.Text + "\r\n" +
                  "Account: " + tl_Tenancy.Text + "\r\n" +
-                 "User: " + tl_user.Text + "\r\n" + 
-                 "Senha: " +tl_Senha.Text+"\r\n"+ "\r\n" +
+                 "User: " + tl_user.Text + "\r\n" +
+                 "Senha: " + tl_Senha.Text + "\r\n" + "\r\n";
 
-                 "(Optional) Note: " + "\r\n" + tl_Note.Text + "\r\n" + "\r\n"+
-                 
-                 "Consumer Key: "+tl_Key.Text + "\r\n"+
+            if (tl_Note.Text != "")
+            {
+                validaNote();
+            }
+            //"(Optional) Note: " + "\r\n" + tl_Note.Text + "\r\n" + "\r\n"+
+
+            tl_template.Text += "Consumer Key: " +tl_Key.Text + "\r\n"+
                  "Consumer Secret: "+tl_Secret.Text + "\r\n" + "\r\n"+
                  
                  "Steps:" + "\r\n"+

@@ -58,11 +58,15 @@ namespace CriadorDeTemplate_Subope
         {
             tl_template.Text = "Descrição/Assunto: " + tl_Desc.Text + "\r\n" + "\r\n" +
 
-            "URL: http://" + tl_Tenancy.Text + "." + comboPlano.Text + ".com.br" + "\r\n" + "Login Type: " + comboPlano.Text + "\r\n" + "Account: " + tl_Tenancy.Text + "\r\n" + "User: " + tl_user.Text + "\r\n" + "Password: " + tl_Senha.Text + "\r\n" + "\r\n" + "\r\n" +
+            "URL: http://" + tl_Tenancy.Text + "." + comboPlano.Text + ".com.br" + "\r\n" + "Login Type: " + comboPlano.Text + "\r\n" + "Account: " + tl_Tenancy.Text + "\r\n" + "User: " + tl_user.Text + "\r\n" + "Password: " + tl_Senha.Text + "\r\n" + "\r\n" + "\r\n";
 
-            "Note (Optional):" + "\r\n" + tl_note.Text + "\r\n" + "\r\n" +
-
-            "Passo a passo consulta no Legal One:" + "\r\n" +
+            //"Note (Optional):" + "\r\n" + tl_note.Text + "\r\n" + "\r\n" +
+            if (tl_note.Text != "")
+            {
+                validaNote();
+            }
+            
+            tl_template.Text += "Passo a passo consulta no Legal One:" + "\r\n" +
             "- Acessar módulo Publicações\r\n- Acessar a aba de Intimações" + "\r\n" +
             "- Filtrar pelo processo " + tl_numProc.Text + "\r\n"+ "\r\n" +
 
@@ -73,6 +77,10 @@ namespace CriadorDeTemplate_Subope
             "Found result: \r\n" + tl_Found.Text + "\r\n" + "\r\n" +
             "Expected result: " + "\r\n" + tl_Expected.Text;
             ;
+        }
+        private void validaNote()
+        {
+            tl_template.Text += "(Opcional) Note:" + "\r\n" + tl_note.Text + "\r\n" + "\r\n" + "\r\n";
         }
     }
 }
