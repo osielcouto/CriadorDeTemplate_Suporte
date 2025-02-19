@@ -1023,7 +1023,27 @@ namespace CriadorDeTemplate_Subope
         private void finalizarMelhoria_Click(object sender, EventArgs e)
         {
             //Cabeçalho e limpar lixo residual
-            tl_template.Text = "Descrição/Assunto: Bug - " + tl_Desc.Text + "\r\n" + "URL: http://" + tl_Tenancy.Text + "." + comboPlano.Text + ".com.br" + "\r\n" + "Login Type: " + comboPlano.Text + "\r\n" + "Account: " + tl_Tenancy.Text + "\r\n" + "User: " + tl_user.Text + "\r\n" + "Password: " + tl_Senha.Text + "\r\n" + "\r\n" + "\r\n" + "(Opcional) Login do usuário que reportou o problema:" + "\r\n" + tl_userProb.Text + "\r\n" + "\r\n" + "(Opcional) Note:" + "\r\n" + tl_note.Text + "\r\n" + "\r\n" + "\r\n";
+            tl_template.Text = "Descrição/Assunto: Bug - " + tl_Desc.Text + "\r\n" +
+                "URL: http://" + tl_Tenancy.Text + "." + comboPlano.Text + ".com.br" + "\r\n" +
+                "Login Type: " + comboPlano.Text + "\r\n" +
+                "Account: " + tl_Tenancy.Text + "\r\n" +
+                "User: " + tl_user.Text + "\r\n" +
+                "Password: " + tl_Senha.Text + "\r\n" + "\r\n" + "\r\n";
+                
+                //"(Opcional) Login do usuário que reportou o problema:" + "\r\n" + tl_userProb.Text + "\r\n" + "\r\n" + 
+                
+                //"(Opcional) Note:" + "\r\n" + tl_note.Text + "\r\n" + "\r\n" + "\r\n";
+
+            if (tl_userProb.Text != "")
+            {
+                validaUserBug();
+            }
+
+            if (tl_note.Text != "")
+            {
+                validaNote();
+            }
+
             if (comboSteps.SelectedIndex == 0)
             {
                 ValidaSteps1 ();
@@ -1051,6 +1071,16 @@ namespace CriadorDeTemplate_Subope
             }
             //Incluindo found e expected
             tl_template.Text += "Found Results:" + "\r\n" + textBox5.Text + "\r\n" + "\r\n" + "Expected Results:" + "\r\n" + textBox6.Text;
+        }
+
+        private void validaUserBug()
+        {
+            tl_template.Text += "(Opcional) Login do usuário que reportou o problema:" + "\r\n" + tl_userProb.Text + "\r\n" + "\r\n";
+        }
+
+        private void validaNote()
+        {
+            tl_template.Text += "(Opcional) Note:" + "\r\n" + tl_note.Text + "\r\n" + "\r\n" + "\r\n";
         }
     }
 }

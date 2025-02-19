@@ -458,7 +458,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FormPrincipal";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Criador de Template 2.5.3";
+            this.Text = "Criador de Template 2.5.4";
             this.ResumeLayout(false);
             this.PerformLayout();
 
