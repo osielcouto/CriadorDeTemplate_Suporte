@@ -64,10 +64,10 @@ namespace CriadorDeTemplate_Subope
 
             "Passo a passo consulta no Legal One:" + "\r\n" +
             "- Acessar módulo Publicações\r\n- Acessar a aba de Intimações" + "\r\n" +
-            "- Filtrar pelo processo " + tl_numProc.Text + " e note que não foi encontrado intimação existente no tribunal"+ "\r\n"+ "\r\n" +
+            "- Filtrar pelo processo " + tl_numProc.Text + "\r\n"+ "\r\n" +
 
             "Passo a passo consulta no Site:\r\n- Link exato para consulta no site: " + tl_site.Text + "\r\n" +
-            "- Usuário e senha do cliente para acessar as intimações no site (Caso o cliente não forneça, destacar aqui a negativa do cliente): " + tl_usersenha.Text + "\r\n" +
+            "- Usuário e senha do cliente para acessar as intimações no site: " + tl_usersenha.Text + "\r\n" +
             "- Número do processo: " + tl_numProc.Text + "\r\n" + "\r\n" +
 
             "Found result: \r\n" + tl_Found.Text + "\r\n" + "\r\n" +
